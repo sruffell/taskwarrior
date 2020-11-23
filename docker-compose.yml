@@ -4,6 +4,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/centos7
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -12,6 +14,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/fedora28
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -20,6 +24,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/fedora29
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -28,6 +34,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/ubuntu1604
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -36,6 +44,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/ubuntu1804
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -44,6 +54,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/debianstable
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -52,6 +64,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/debiantesting
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -60,6 +74,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/gentoo
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -68,6 +84,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/opensuse1500
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
@@ -76,6 +94,8 @@ services:
     build:
         context: .
         dockerfile: test/docker/arch180101
+    volumes:
+      - ./:/source
     network_mode: "host"
     security_opt:
       - label=type:container_runtime_t
